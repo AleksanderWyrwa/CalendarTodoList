@@ -126,5 +126,5 @@ spring.jpa.show-sql=true
 ## Contact 📧
 
 For any questions or suggestions, feel free to reach out:  
-**[Your Name]**  
-**[Your Email]**
+**Aleksander Wyrwa**  
+**aleksander.wyrwa13@gmail.com**
