@@ -35,7 +35,7 @@ export default function App() {
           />
           <div>
             <Button variant="contained" onClick={() => setIsFormOpen(true)}>
-              Show Todo Form
+              Add a task
             </Button>
             {isFormOpen && (
               <TodoForm
