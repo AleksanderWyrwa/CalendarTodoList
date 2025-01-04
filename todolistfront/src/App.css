@@ -1,0 +1,71 @@
+/* Main container */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Jasnoszare tło dla całej aplikacji */
+  }
+  
+  /* Header (App bar) */
+  header {
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+  }
+  
+  /* Card layout for main content */
+  .card {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff; /* Białe tło karty */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Date picker, button, form, and task table styling */
+  button {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  
+  button:active {
+    opacity: 0.9;
+  }
+  
+  /* For form visibility */
+  .todo-form {
+    display: block;
+  }
+  
+  /* Task table container */
+  .task-table {
+    margin-top: 20px;
+  }
+  
+  /* Task form modal styling (if you use a modal) */
+  .todo-form-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
