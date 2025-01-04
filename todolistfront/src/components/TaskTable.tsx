@@ -312,18 +312,6 @@ const TaskTable: React.FC<TaskTableProps> = ({ selectedDate, tasksUpdated, onTas
                     )}
                   </TableCell>
                 </Hidden>
-
-                {editingTaskId === task.id && (
-                  <TableCell sx={{ width: '30%' }}>
-                    <TextField
-                      value={editedTaskData?.dueDate || ''}
-                      onChange={(e) => handleFieldChange('dueDate', e.target.value)}
-                      variant="outlined"
-                      size="small"
-                      type="date"
-                      InputLabelProps={{
-                        shrink: true,
-                      }}
                     />
                   </TableCell>
                 )}
