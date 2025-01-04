@@ -99,7 +99,7 @@ Follow these steps to run the Spring Boot backend with IntelliJ IDEA:
    - Launch IntelliJ IDEA and open your Spring Boot project by navigating to **File > Open** and selecting the project directory.
 
 ### 2. **Configure the Application**
-   - Open the `application.properties` or `application.yml` file and make sure that the database configurations and port are set properly (as described previously).
+   - Open the `application.properties` file and make sure that the database configurations and port are set properly (as described previously).
    - Make sure your MySQL database is running via XAMPP and the `todolist` database exists.
 
 ### 3. **Run the Application**
