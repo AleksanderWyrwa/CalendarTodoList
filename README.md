@@ -68,6 +68,7 @@ Follow these steps to set up and run the **ToDo List Application** locally.
 
 Ensure the `application.properties` file in the Spring Boot project is configured as follows:
 
+```properties
 # Application name
 spring.application.name=todolist
 
