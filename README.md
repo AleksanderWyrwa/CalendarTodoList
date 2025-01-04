@@ -91,6 +91,30 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.show-sql=true
 ```
 
+## Running the Backend with IntelliJ IDEA 🚀
+
+Follow these steps to run the Spring Boot backend with IntelliJ IDEA:
+
+### 1. **Open the Project**
+   - Launch IntelliJ IDEA and open your Spring Boot project by navigating to **File > Open** and selecting the project directory.
+
+### 2. **Configure the Application**
+   - Open the `application.properties` or `application.yml` file and make sure that the database configurations and port are set properly (as described previously).
+   - Make sure your MySQL database is running via XAMPP and the `todolist` database exists.
+
+### 3. **Run the Application**
+   - In IntelliJ, open the **Run/Debug Configuration** settings by clicking on the **Run** menu and selecting **Edit Configurations**.
+   - Select the default Spring Boot run configuration or create a new one:
+     - Choose **Application** as the configuration type.
+     - In the **Main class** field, specify the main class (usually the one with the `@SpringBootApplication` annotation, e.g., `com.example.TodolistApplication`).
+     - Click **OK** to save the configuration.
+   - To run the application, simply click on the **Run** button (the green play icon) or press `Shift + F10`. The application will start, and you should see logs in the console.
+
+### 4. **Access the Backend**
+   - After the application starts, you can access the backend on `http://localhost:8081` (or the port you configured).
+
+---
+
 ## Usage 🖱️
 
 1. **Add Tasks**:
