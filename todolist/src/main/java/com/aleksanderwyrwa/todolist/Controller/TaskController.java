@@ -57,15 +57,12 @@ public class TaskController {
     }
     @GetMapping("/{taskId}/isCompleted")
     public ResponseEntity<Boolean> isTaskCompleted(@PathVariable int taskId) {
-        // Znalezienie zadania na podstawie ID
         Optional<Task> taskOptional = taskRepository.findById(taskId);
 
         if (taskOptional.isPresent()) {
             Task task = taskOptional.get();
-            // Zwracamy odpowiedź, która zawiera status isCompleted
             return ResponseEntity.ok(task.isCompleted());
         } else {
-            // Jeśli zadanie nie istnieje, zwrócimy błąd 404
             return ResponseEntity.notFound().build();
         }
     }
