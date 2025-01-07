@@ -57,15 +57,19 @@ public class TaskController {
     }
     @GetMapping("/{taskId}/isCompleted")
     public ResponseEntity<Boolean> isTaskCompleted(@PathVariable int taskId) {
+    // Finding the task based on its ID
         Optional<Task> taskOptional = taskRepository.findById(taskId);
 
         if (taskOptional.isPresent()) {
             Task task = taskOptional.get();
+            // Return a response that includes the isCompleted status
             return ResponseEntity.ok(task.isCompleted());
         } else {
+        // If the task does not exist, return a 404 error
             return ResponseEntity.notFound().build();
-        }
+        }    
     }
+
 
     @GetMapping("/uncompleted-count/{date}")
     public ResponseEntity<Integer> getUncompletedTaskCountByDate(@PathVariable String date) {
