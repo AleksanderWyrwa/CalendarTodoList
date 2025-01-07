@@ -312,20 +312,16 @@ const TaskTable: React.FC<TaskTableProps> = ({ selectedDate, tasksUpdated, onTas
                     )}
                   </TableCell>
                 </Hidden>
-                    />
-                  </TableCell>
-                )}
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
 
-      {/* Add the pagination component */}
       <TablePagination
         rowsPerPageOptions={[5, 10, 25]}
         component="div"
-        count={filteredTasks.length} // Total number of tasks to be paginated
+        count={filteredTasks.length} 
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}
